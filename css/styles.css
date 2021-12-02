@@ -154,7 +154,7 @@ body {
 
 .text-benefits,
 .text-team {
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 30px;
@@ -224,7 +224,7 @@ body {
 
 .title-team {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     padding-top: 30px;
     padding-bottom: 0;
 }
@@ -288,11 +288,22 @@ body {
 
 /* Проекты */
 
+.main-projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.links {
+    margin-bottom: 50px;
+}
+
 .project-item:not(:last-child) {
     margin-bottom: 30px;
 }
 
-.project-title {
+.projects-title {
+    margin-top: 20px;
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -300,7 +311,9 @@ body {
     color: var(--title-text-color);
 }
 
-.project-text {
+.projects-text {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
