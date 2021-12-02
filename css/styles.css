@@ -206,7 +206,7 @@ body {
     padding-top: 94px;
 }
 
-.secondary-bgc:nth-child(2n) {
+.secondary-bgc:last-child {
     background: var(--secondary-bgc);
 }
 
@@ -295,6 +295,11 @@ body {
 
 .links {
     margin-bottom: 50px;
+}
+
+.project-item {
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
 }
 
 .project-item:not(:last-child) {
