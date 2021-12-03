@@ -18,6 +18,10 @@ body {
     letter-spacing: 0.03em;
 }
 
+img {
+    display: block;
+}
+
 .list {
     margin: 0;
     padding: 0;
@@ -26,7 +30,8 @@ body {
 
 .container {
     display: inline-block;
-    width: 1170px;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 15px;
 }
 
@@ -60,6 +65,12 @@ body {
     color: var(--primary-white-color);
 }
 
+.logo-up {
+    display: flex;
+    align-items: center;
+    margin-right: 93px;
+}
+
 .logo-first-word,
 .active,
 .nav-link:hover,
@@ -72,8 +83,21 @@ body {
 
 /* ===========Навигация сайта=========== */
 
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.sitenav-links,
+.nav-contacts {
+    display: flex;
+}
+
 .nav-link,
 .contact {
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -82,8 +106,34 @@ body {
     color: var(--title-text-color);
 }
 
+.contact-mail {
+    display: flex;
+    margin-left: auto;
+}
+
 .contact {
+    margin-left: auto;
     color: var(--primary-text-color);
+}
+
+.nav-item:not(:last-child) {
+    display: flex;
+    margin-right: 50px;
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-contacts-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact.mail {
+    margin-right: 50px;
 }
 
 
@@ -187,6 +237,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    max-width: 270px;
 }
 
 
@@ -297,12 +348,25 @@ body {
     margin-bottom: 50px;
 }
 
+.project-btn-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
 .project-item {
-    border: 1px solid #EEEEEE;
+    max-width: 370px;
+    border-bottom: 1px solid #EEEEEE;
     box-sizing: border-box;
 }
 
-.project-item:not(:last-child) {
+.project-item:not(:nth-last-child(-n+3)) {
     margin-bottom: 30px;
 }
 
