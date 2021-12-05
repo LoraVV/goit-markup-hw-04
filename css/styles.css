@@ -20,6 +20,8 @@ body {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .list {
@@ -57,22 +59,18 @@ img {
     text-decoration: none;
 }
 
-.logo-up {
-    color: #000;
-}
-
 .logo-under {
     color: var(--primary-white-color);
 }
 
 .logo-up {
+    color: #000000;
     display: flex;
     align-items: center;
     margin-right: 93px;
 }
 
 .logo-first-word,
-.active,
 .nav-link:hover,
 .nav-link:focus,
 .contact:hover,
@@ -80,10 +78,14 @@ img {
     color: var(--accent-color);
 }
 
+.active {
+    color: var(--accent-color);
+}
+
 
 /* ===========Навигация сайта=========== */
 
-.nav {
+.sitenav {
     display: flex;
     align-items: center;
 }
@@ -91,13 +93,19 @@ img {
 .sitenav-links,
 .nav-contacts {
     display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.nav-contacts {
+    margin-left: auto;
 }
 
 .nav-link,
 .contact {
     display: block;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -116,7 +124,12 @@ img {
     color: var(--primary-text-color);
 }
 
-.nav-item:not(:last-child) {
+.nav-item {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.sitenav-links .nav-item:not(:last-child) {
     display: flex;
     margin-right: 50px;
 }
@@ -139,9 +152,19 @@ img {
 
 /* ===========Герой=========== */
 
+.hero-box-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    min-width: auto;
+}
+
 .hero-title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -182,6 +205,10 @@ img {
 .benefits-list,
 .work-list,
 .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -191,6 +218,7 @@ img {
 .team-main-title,
 .title-team {
     letter-spacing: 0.03em;
+    text-align: center;
     color: var(--title-text-color);
 }
 
@@ -220,6 +248,14 @@ img {
     margin-bottom: 0;
 }
 
+.benefits-item {
+    width: 270px;
+}
+
+.benefits-item+.benefits-item {
+    margin-left: 30px;
+}
+
 .title-benefits {
     margin-top: 0;
     margin-bottom: 10px;
@@ -243,6 +279,14 @@ img {
 
 /* ===========Работы=========== */
 
+.work-item {
+    width: 370px;
+}
+
+.work-item+.work-item {
+    margin-left: 30px;
+}
+
 .work-title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -264,6 +308,14 @@ img {
 .team-main-title {
     margin-top: 0;
     margin-bottom: 50px;
+}
+
+.team-item {
+    width: 270px;
+}
+
+.team-item+.team-item {
+    margin-left: 30px;
 }
 
 .title-team,
@@ -325,8 +377,9 @@ img {
 }
 
 .button-links {
+    border: transparent;
     color: var(--title-text-color);
-    background-color: #F5F4FA;
+    background-color: var(--secondary-bgc);
 }
 
 .button-links:hover,
@@ -350,21 +403,39 @@ img {
 
 .project-btn-flex {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 611px;
 }
 
 .projects-flex-container {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -10px;
+    /* margin-left: -10px; */
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1230px;
 }
 
 .project-item {
-    max-width: 370px;
+    /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов встроке) */
+    /* width: calc((100%-60px)/3); */
+    width: 370px;
     border-bottom: 1px solid #EEEEEE;
     box-sizing: border-box;
+    /* margin: 15px; */
+    margin-right: 30px;
 }
+
+
+/* .project-item:nth-child(3n) {
+    margin-right: 0;
+} */
 
 .project-item:not(:nth-last-child(-n+3)) {
     margin-bottom: 30px;

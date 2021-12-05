@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="<link rel=" stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css " integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="
-        anonymous " referrerpolicy="no-referrer " />">
+    <link rel=" stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css " integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous " referrerpolicy="no-referrer "
+    />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -19,23 +19,24 @@
     <body>
         <!-- Шапка сайта -->
         <header>
-            <div class="conteiner header-flex">
-                <nav class="sitenav container ">
-                    <a class="logo-up " href="/ "><span class="logo-first-word ">Web</span>Studio</a>
+            <!-- <div class=" nav"> -->
+            <nav class="container sitenav header-flex">
+                <a class="logo-up " href="/ "><span class="logo-first-word ">Web</span>Studio</a>
 
-                    <ul class="sitenav-links list ">
-                        <li><a class="nav-link active " href="./index.html ">Студия</a></li>
-                        <li><a class="nav-link " href="./portfolio.html ">Портфолио</a></li>
-                        <li><a class="nav-link " href=" ">Контакты</a></li>
-                    </ul>
+                <ul class="sitenav-links list header-flex">
+                    <li class="nav-item"><a class="nav-link  " href="./index.html ">Студия</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./portfolio.html ">Портфолио</a></li>
+                    <li class="nav-item"><a class="nav-link " href=" ">Контакты</a></li>
+                </ul>
 
 
-                    <ul class="nav-contacts list ">
-                        <li><a class="contact " href="mailto:info@devstudio.com ">info@devstudio.com</a></li>
-                        <li><a class="contact " href="tel:+380961111111 ">+38 096 111 11 11</a></li>
-                    </ul>
-                </nav>
-            </div>
+                <ul class="nav-contacts list header-contacts-flex">
+                    <li class="contact-mail"><a class="contact mail" href="mailto:info@devstudio.com ">info@devstudio.com</a></li>
+                    <li class="contact-phone"><a class="contact " href="tel:+380961111111 ">+38 096 111 11 11</a></li>
+                </ul>
+            </nav>
+            <!-- </div> -->
+
         </header>
 
         <main>
@@ -77,7 +78,7 @@
                         <li class="project-item">
                             <img src="./images/imgprojects5.jpg" alt="Картонные коробки" width="370">
                             <h2 class="projects-title">Проект Boxes</h2>
-                            <p>Приложение</p>
+                            <p class="projects-text"> Приложение</p>
                         </li>
                         <li class="project-item">
                             <img src="./images/imgprojects6.jpg" alt="Монитор" width="370">
