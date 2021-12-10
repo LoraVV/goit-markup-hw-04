@@ -52,6 +52,14 @@ ul {
     text-align: center;
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 
 /* ===========Лого=========== */
 
@@ -92,12 +100,7 @@ ul {
 /* ===========Навигация сайта=========== */
 
 .header {
-    padding: 0 15px;
     border-bottom: 1px solid #000000;
-}
-
-.nav {
-    display: flex;
 }
 
 .sitenav {
@@ -132,7 +135,6 @@ ul {
 
 .contact-mail {
     display: flex;
-    margin-left: auto;
 }
 
 .contact {
@@ -234,14 +236,6 @@ ul {
 
 /* ===========Преимущества=========== */
 
-.visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-}
-
 .benefits-main-title {
     margin-top: 0;
     margin-bottom: 0;
@@ -337,7 +331,7 @@ ul {
 /* ===========Подвал=========== */
 
 .footer {
-    padding: 60px 15px;
+    padding: 60px 0;
 }
 
 .address-footer,
