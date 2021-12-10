@@ -91,6 +91,11 @@ ul {
 
 /* ===========Навигация сайта=========== */
 
+.header {
+    padding: 0 15px;
+    border-bottom: 1px solid #000000;
+}
+
 .nav {
     display: flex;
 }
@@ -332,7 +337,7 @@ ul {
 /* ===========Подвал=========== */
 
 .footer {
-    padding: 60px 0;
+    padding: 60px 15px;
 }
 
 .address-footer,
