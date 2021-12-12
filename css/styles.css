@@ -433,6 +433,7 @@ ul {
 
 .social-link:hover,
 .social-link:focus {
+    cursor: pointer;
     background-color: var(--accent-color);
 }
 
@@ -447,7 +448,9 @@ ul {
     height: 20px;
 }
 
-.link-svg:hover {
+.link-svg:hover,
+.link-svg:focus {
+    cursor: pointer;
     fill: var(--primary-white-color);
 }
 
@@ -488,6 +491,7 @@ ul {
 
 .icon-client:hover,
 .icon-client:focus {
+    cursor: pointer;
     fill: var(--accent-color);
     border-color: var(--accent-color);
 }
@@ -578,6 +582,7 @@ ul {
 
 .footer-link:hover,
 .footer-link:focus {
+    cursor: pointer;
     background-color: var(--accent-color);
 }
 
@@ -619,6 +624,7 @@ ul {
 
 .button-links:hover,
 .button-links:focus {
+    cursor: pointer;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
