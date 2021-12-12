@@ -103,6 +103,10 @@ ul {
     border-bottom: 1px solid #000000;
 }
 
+.nav {
+    display: flex;
+}
+
 .sitenav {
     display: flex;
     align-items: center;
@@ -118,6 +122,19 @@ ul {
 .nav-contacts {
     align-items: center;
     margin-left: auto;
+}
+
+.link-contact {
+    display: flex;
+    align-items: center;
+}
+
+.icon-contact {
+    display: flex;
+    justify-content: center;
+    width: 16px;
+    height: 12px;
+    fill: var(--primary-text-color);
 }
 
 .nav-link,
@@ -169,6 +186,17 @@ ul {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
+}
+
+.overlay {
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-box.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .button-hero {
@@ -249,8 +277,44 @@ ul {
     margin-left: 30px;
 }
 
+.icon-benefits {
+    width: 70px;
+    height: 70px;
+    fill: var(--title-text-color);
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.icon-div-benefits {
+    display: block;
+    content: "";
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: var(--secondary-bgc);
+    border-radius: 4px;
+    fill: var(--title-text-color);
+}
+
+
+/* .benefits-item:nth-child(1):before {
+    background-image: url();
+}
+
+.benefits-item:nth-child(2):before {
+    background-image: url();
+}
+
+.benefits-item:nth-child(3):before {
+    background-image: url();
+}
+
+.benefits-item:nth-child(4):before {
+    background-image: url();
+} */
+
 .title-benefits {
-    margin-top: 0;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -261,8 +325,6 @@ ul {
 }
 
 .text-benefits {
-    margin-top: 0;
-    margin-bottom: 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -325,6 +387,30 @@ ul {
 
 .text-team {
     font-weight: 400;
+}
+
+.social-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-link:hover {
+    background-color: var(--accent-color);
+}
+
+.link-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+}
+
+.link-svg:hover {
+    fill: var(--primary-white-color);
 }
 
 
