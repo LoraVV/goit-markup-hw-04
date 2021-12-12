@@ -89,6 +89,7 @@ ul {
 .nav-link:focus,
 .contact:hover,
 .contact:focus {
+    cursor: pointer;
     color: var(--accent-color);
 }
 
@@ -141,6 +142,7 @@ ul {
 
 .icon-contact:hover,
 .icon-contact:focus {
+    cursor: pointer;
     fill: var(--accent-color);
 }
 
@@ -236,6 +238,7 @@ ul {
 
 .button-hero:hover,
 .button-hero:focus {
+    cursor: pointer;
     background-color: #1b71b8;
 }
 
