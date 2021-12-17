@@ -87,7 +87,6 @@ ul {
 .logo-first-word,
 .nav-link:hover,
 .nav-link:focus {
-    cursor: pointer;
     color: var(--accent-color);
 }
 
@@ -148,11 +147,12 @@ ul {
     height: 16px;
 }
 
-.icon-phone-wrap {
+
+/* .icon-phone-wrap {
     display: flex;
     flex-wrap: wrap;
     content: "";
-}
+} */
 
 .nav-link,
 .contact {
