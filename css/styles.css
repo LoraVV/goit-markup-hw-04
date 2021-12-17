@@ -90,7 +90,7 @@ ul {
     color: var(--accent-color);
 }
 
-.active {
+.nav-link.active {
     color: var(--accent-color);
 }
 
@@ -111,51 +111,14 @@ ul {
 }
 
 .sitenav-links,
-.nav-contacts {
+.contacts {
     display: flex;
     align-items: center;
     align-content: center;
 }
 
-.nav-contacts {
-    align-items: center;
-    margin-left: auto;
-}
-
-.link-contact {
-    display: flex;
-    content: "";
-    align-items: center;
-}
-
-.icon-contact {
-    display: flex;
-    justify-content: center;
-    margin-right: 10px;
-    width: 16px;
-    height: 12px;
-    fill: var(--primary-text-color);
-}
-
-.contact-mail:hover .icon-contact,
-.contact-mail:focus .icon-contact {
-    fill: var(--accent-color);
-}
-
-.icon-phone {
-    width: 10px;
-    height: 16px;
-}
-
-
-/* .icon-phone-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    content: "";
-} */
-
 .nav-link,
-.contact {
+.contacts-link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -167,31 +130,47 @@ ul {
     color: var(--title-text-color);
 }
 
-.contact.mail,
-.contact-phone {
+.contacts {
+    margin-left: auto;
+}
+
+.contacts-link {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    fill: var(--primary-text-color);
 }
 
-.contact {
-    color: var(--primary-text-color);
-}
-
-.contact:hover .icon-phone,
-.contact:focus .icon-phone {
-    fill: var(--accent-color);
+.contacts-icon {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 .nav-item {
     margin-left: auto;
 }
 
-.nav-item:not(:last-child) {
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-link {
+    color: var(--primary-text-color);
+}
+
+.nav-item:not(:last-child),
+.contact-item:not(:last-child) {
     margin-right: 50px;
 }
 
-.contact-mail {
-    margin-right: 50px;
+.contacts-link:hover,
+.contacts-link:focus {
+    color: var(--accent-color);
+}
+
+.contacts-link:hover .contacts-icon,
+.contacts-link:focus .contacts-icon {
+    fill: var(--accent-color);
 }
 
 
@@ -446,7 +425,7 @@ ul {
     background-color: var(--accent-color);
 }
 
-.social-link:not(:last-child) {
+.icon-team-item:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -585,7 +564,7 @@ ul {
     background-color: var(--accent-color);
 }
 
-.footer-link:not(:last-child) {
+.icon-footer-item:not(:last-child) {
     margin-right: 10px;
 }
 
